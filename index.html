@@ -1,104 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trading Resources</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-
-    .container {
-      padding: 1rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      margin-top: 2rem;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.3rem;
-      font-size: 1.2rem;
-      color: #111;
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    li {
-      margin: 0.5rem 0;
-    }
-
-    a {
-      text-decoration: none;
-      color: #0066cc;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .title {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Platforms</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .compact-header {
+            background: linear-gradient(135deg, #2a3042 0%, #3a435e 100%);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .platform-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .platform-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .platform-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .platform-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #2a3042;
+        }
+        .platform-lang {
+            display: inline-block;
+            background: #e0e5ec;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #4e6ef2 0%, #3a56e8 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: linear-gradient(135deg, #3a56e8 0%, #2a45d5 100%);
+        }
+        .section-title {
+            margin: 30px 0 20px;
+            color: #2a3042;
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="title">Explore Trading Tools and Platforms</div>
+    <header class="compact-header">
+        <div class="logo">TradingHub</div>
+        <nav class="nav-links">
+            <a href="#platforms">Platforms</a>
+            <a href="#resources">Resources</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
 
-    <h2>C-Trader</h2>
-    <ul>
-      <li><a href="https://track.deriv.com/_KCH6LP9EQxyNhxmBqQyZL2Nd7ZgqdRLk/1/">C-Trader Homepage (EN)</a></li>
-    </ul>
+    <div class="container">
+        <h1 class="section-title">Trading Platforms</h1>
+        <div class="platform-grid" id="platforms">
+            <!-- cTrader -->
+            <div class="platform-card">
+                <h2 class="platform-title">cTrader</h2>
+                <span class="platform-lang">EN</span>
+                <p>Advanced trading platform with direct market access and algorithmic trading.</p>
+                <a href="https://track.deriv.com/_KCH6LP9EQxyNhxmBqQyZL2Nd7ZgqdRLk/1/" class="btn">Get Started</a>
+            </div>
 
-    <h2>DBot</h2>
-    <ul>
-      <li><a href="https://track.deriv.com/_KCH6LP9EQxyFfUyb_9NCN2Nd7ZgqdRLk/1/">DBot (EN)</a></li>
-      <li><a href="https://track.deriv.com/_KCH6LP9EQxzqIA207YH0RmNd7ZgqdRLk/1/">DBot (ES)</a></li>
-      <li><a href="https://track.deriv.com/_KCH6LP9EQxzq8sJDX1BAemNd7ZgqdRLk/1/">DBot (PL)</a></li>
-      <li><a href="https://track.deriv.com/_KCH6LP9EQxz3zJwZiAI8bGNd7ZgqdRLk/1/">DBot (IT)</a></li>
-      <li><a href="https://track.deriv.be/_KCH6LP9EQxy4WwKKfu57DmNd7ZgqdRLk/1/">DBot (RU)</a></li>
-      <li><a href="https://track.deriv.com/_KCH6LP9EQxw0wMIHhd3WdGNd7ZgqdRLk/1/">DBot (VI)</a></li>
-      <li><a href="https://track.deriv.com/_KCH6LP9EQxwJrrido9NdZWNd7ZgqdRLk/1/">DBot (ZH-CN)</a></li>
-    </ul>
+            <!-- DBot -->
+            <div class="platform-card">
+                <h2 class="platform-title">DBot</h2>
+                <span class="platform-lang">EN</span>
+                <p>Automate your trading strategies without coding knowledge.</p>
+                <a href="https://track.deriv.com/_KCH6LP9EQxyFfUyb_9NCN2Nd7ZgqdRLk/1/" class="btn">Try DBot</a>
+            </div>
 
-    <h2>DMT5</h2>
-    <ul>
-      <li><a href="https://track.deriv.com/_KCH6LP9EQxzD0A58kf80PGNd7ZgqdRLk/1/">DMT5 (AR)</a></li>
-      <li><a href="https://track.deriv.com/_KCH6LP9EQxxnhKTx4PKacmNd7ZgqdRLk/1/">DMT5 (EN)</a></li>
-    </ul>
+            <div class="platform-card">
+                <h2 class="platform-title">DBot</h2>
+                <span class="platform-lang">ES</span>
+                <p>Automatiza tus estrategias de trading sin necesidad de programación.</p>
+                <a href="https://track.deriv.com/_KCH6LP9EQxzqIA207YH0RmNd7ZgqdRLk/1/" class="btn">Probar DBot</a>
+            </div>
 
-    <h2>Deriv Go</h2>
-    <ul>
-      <li><a href="https://track.deriv.com/_KCH6LP9EQxz0ZNFqtJq7tmNd7ZgqdRLk/1/">Deriv Go (AR)</a></li>
-      <li><a href="https://track.deriv.com/_KCH6LP9EQxwh5SlbyAEvNmNd7ZgqdRLk/1/">Deriv Go (RU)</a></li>
-    </ul>
+            <div class="platform-card">
+                <h2 class="platform-title">DBot</h2>
+                <span class="platform-lang">PL</span>
+                <p>Zautomatyzuj swoje strategie tradingowe bez znajomości programowania.</p>
+                <a href="https://track.deriv.com/_KCH6LP9EQxzq8sJDX1BAemNd7ZgqdRLk/1/" class="btn">Wypróbuj DBot</a>
+            </div>
 
-    <h2>Deriv Blog</h2>
-    <ul>
-      <li><a href="https://track.deriv.com/_KCH6LP9EQxwLCf9UsP9CdGNd7ZgqdRLk/1/">Read the Blog</a></li>
-    </ul>
+            <div class="platform-card">
+                <h2 class="platform-title">DBot</h2>
+                <span class="platform-lang">IT</span>
+                <p>Automatizza le tue strategie di trading senza bisogno di programmare.</p>
+                <a href="https://track.deriv.com/_KCH6LP9EQxz3zJwZiAI8bGNd7ZgqdRLk/1/" class="btn">Prova DBot</a>
+            </div>
 
-    <h2>Signup</h2>
-    <ul>
-      <li><a href="https://track.deriv.com/_KCH6LP9EQxwKqFKZ7JdnQ2Nd7ZgqdRLk/1/">Create an Account</a></li>
-    </ul>
+            <div class="platform-card">
+                <h2 class="platform-title">DBot</h2>
+                <span class="platform-lang">RU</span>
+                <p>Автоматизируйте свои торговые стратегии без программирования.</p>
+                <a href="https://track.deriv.be/_KCH6LP9EQxy4WwKKfu57DmNd7ZgqdRLk/1/" class="btn">Попробовать DBot</a>
+            </div>
 
-    <h2>Multipliers</h2>
-    <ul>
-      <li><a href="https://track.deriv.com/_KCH6LP9EQxw9F-13urvbiWNd7ZgqdRLk/1/">Multipliers (EN)</a></li>
-    </ul>
-  </div>
+            <div class="platform-card">
+                <h2 class="platform-title">DBot</h2>
+                <span class="platform-lang">VI</span>
+                <p>Tự động hóa chiến lược giao dịch của bạn mà không cần lập trình.</p>
+                <a href="https://track.deriv.com/_KCH6LP9EQxw0wMIHhd3WdGNd7ZgqdRLk/1/" class="btn">Dùng thử DBot</a>
+            </div>
+
+            <div class="platform-card">
+                <h2 class="platform-title">DBot</h2>
+                <span class="platform-lang">ZH-CN</span>
+                <p>无需编程知识即可自动化您的交易策略。</p>
+                <a href="https://track.deriv.com/_KCH6LP9EQxwJrrido9NdZWNd7ZgqdRLk/1/" class="btn">试用DBot</a>
+            </div>
+
+            <!-- DMT5 -->
+            <div class="platform-card">
+                <h2 class="platform-title">MetaTrader 5</h2>
+                <span class="platform-lang">AR</span>
+                <p>منصة تداول متقدمة مع الوصول المباشر إلى السوق.</p>
+                <a href="https://track.deriv.com/_KCH6LP9EQxzD0A58kf80PGNd7ZgqdRLk/1/" class="btn">ابدأ التداول</a>
+            </div>
+
+            <div class="platform-card">
+                <h2 class="platform-title">MetaTrader 5</h2>
+                <span class="platform-lang">EN</span>
+                <p>The ultimate trading platform with advanced technical analysis tools.</p>
+                <a href="https://track.deriv.com/_KCH6LP9EQxxnhKTx4PKacmNd7ZgqdRLk/1/" class="btn">Start Trading</a>
+            </div>
+
+            <!-- Deriv Go -->
+            <div class="platform-card">
+                <h2 class="platform-title">Deriv Go</h2>
+                <span class="platform-lang">AR</span>
+                <p>تطبيق تداول متنقل مع عقود الفروقات على المشتقات.</p>
+                <a href="https://track.deriv.com/_KCH6LP9EQxz0ZNFqtJq7tmNd7ZgqdRLk/1/" class="btn">حمل التطبيق</a>
+            </div>
+
+            <div class="platform-card">
+                <h2 class="platform-title">Deriv Go</h2>
+                <span class="platform-lang">RU</span>
+                <p>Мобильное торговое приложение с CFD на деривативы.</p>
+                <a href="https://track.deriv.com/_KCH6LP9EQxwh5SlbyAEvNmNd7ZgqdRLk/1/" class="btn">Скачать приложение</a>
+            </div>
+
+            <!-- Other Platforms -->
+            <div class="platform-card">
+                <h2 class="platform-title">Multipliers</h2>
+                <span class="platform-lang">EN</span>
+                <p>Trade with multipliers to amplify your potential profit without risking more than your stake.</p>
+                <a href="https://track.deriv.com/_KCH6LP9EQxw9F-13urvbiWNd7ZgqdRLk/1/" class="btn">Learn More</a>
+            </div>
+        </div>
+
+        <h1 class="section-title" id="resources">Resources</h1>
+        <div class="platform-grid">
+            <div class="platform-card">
+                <h2 class="platform-title">Deriv Blog</h2>
+                <p>Latest news, trading tips, and market analysis from our experts.</p>
+                <a href="https://track.deriv.com/_KCH6LP9EQxwLCf9UsP9CdGNd7ZgqdRLk/1/" class="btn">Read Blog</a>
+            </div>
+
+            <div class="platform-card">
+                <h2 class="platform-title">Trader's Hub</h2>
+                <span class="platform-lang">EN</span>
+                <p>Your comprehensive guide to trading with educational resources.</p>
+                <a href="https://track.deriv.com/_KCH6LP9EQxx9h9r9d4EPOWNd7ZgqdRLk/1/" class="btn">Explore Hub</a>
+            </div>
+
+            <div class="platform-card">
+                <h2 class="platform-title">Direct Signup</h2>
+                <span class="platform-lang">EN</span>
+                <p>Create your trading account and start your journey.</p>
+                <a href="https://track.deriv.com/_KCH6LP9EQxwKqFKZ7JdnQ2Nd7ZgqdRLk/1/" class="btn">Sign Up Now</a>
+            </div>
+        </div>
+
+        <section id="about" style="margin-top: 50px; padding: 30px 0; text-align: center;">
+            <h2 class="section-title">About TradingHub</h2>
+            <p style="max-width: 800px; margin: 0 auto;">We provide access to multiple trading platforms and tools to help traders of all levels achieve their financial goals. Our curated selection of platforms offers solutions for every trading style and preference.</p>
+        </section>
+    </div>
 </body>
 </html>
